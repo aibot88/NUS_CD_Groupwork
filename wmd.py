@@ -9,9 +9,10 @@ import random
 
 
 name_list = []
-poem_dict = {}
+poem_list = []
 temp = []
 # temp1 = []
+poem_com_dict = {}
 poem_match_dict = {}
 stopwords = [item.strip() for item in open("data/百度停用词表.txt",'r',encoding='utf-8').readlines()]
 def match():
@@ -19,28 +20,49 @@ def match():
     model_w2v = Word2Vec.load(model)
     sentences =list(LineSentence('data/cut_word.txt'))
     num_best = len(sentences)
-    instance = WmdSimilarity(sentences, model_w2v,num_best = len(sentences))
-    with open("data/weibo.txt","r",encoding='utf-8') as f:
-            context = f.readline()
-            while context:
-                temp.append(context.split("\t"))
-                context = f.readline()
-                # if len(temp) >= 60178:
-                #     break
-    for item in temp:
-        name_list.append(item[1].replace(" ",""))
+    instance = WmdSimilarity(sentences, model_w2v,num_best = num_best)
+    # with open("data/weibo.txt","r",encoding='utf-8') as f:
+    #         context = f.readline()
+    #         while context:
+    #             temp.append(context.split("\t"))
+    #             context = f.readline()
+    #             # if len(temp) >= 60178:
+    #             #     break
+    # random.shuffle(temp)
+    for item in sentences:
+        name_list.append(item[0].replace(":",""))
+        poem_list.append(item[0:])
+    conunt = 0
     with open("data/input_data.csv","a",encoding='utf-8') as f:
-        for item  in sentences:
-            sims = instance[item]
-            index1 = name_list[sentences.index(item)]
-            # print(index1)
-            for j in range(num_best):
+        for i  in range(num_best):
+            if i > num_best: break
+            sims = instance[poem_list[i]]
+            index1 = name_list[i]
+            # poem_dict[(index1,index2)] = 1-sims[j][1]
+            sim_name = []
+            for j in range(len(sims)):
+                sim_name.append(name_list[sims[j][0]])
+            for j in range(len(sims)):
+                print(sim_name)
                 index2 = name_list[j]
-                poem_dict[(index1,index2)] = 1-sims[j][1]
-                f.write(str(index1)+","+str(index2)+","+str(1 - sims[j][1]))
-                f.write("\n")
-    # print(poem_dict)
-
+                value = sims[sim_name.index(index2)][1]
+                value = round(value,8)
+                key_n = (index1,index2)
+                key_c = (index2,index1)
+                if key_n in poem_match_dict:
+                    continue
+                poem_match_dict[key_n] = value
+                poem_com_dict[key_c] = value
+                f.write(str(index1)+","+str(index2)+","+str(1-value))
+                f.write("\n")        
+                conunt += 1
+    print(conunt)
+    cnt = 0
+    for k ,v in poem_match_dict.items():
+            if v == poem_com_dict[k]:
+                cnt +=1
+            else: print("error occur")
+    print(cnt)
 
 
 
