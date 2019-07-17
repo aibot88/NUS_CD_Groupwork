@@ -16,9 +16,9 @@ poem_com_dict = {}
 poem_match_dict = {}
 stopwords = [item.strip() for item in open("data/百度停用词表.txt",'r',encoding='utf-8').readlines()]
 def match():
-    model = 'data/m2v.mod'
+    model = 'data/m2v_full.mod'
     model_w2v = Word2Vec.load(model)
-    sentences =list(LineSentence('data/cut_word.txt'))
+    sentences =list(LineSentence('data/cut_word_full.txt'))
     num_best = len(sentences)
     instance = WmdSimilarity(sentences, model_w2v,num_best = num_best)
     # with open("data/weibo.txt","r",encoding='utf-8') as f:
@@ -31,9 +31,9 @@ def match():
     # random.shuffle(temp)
     for item in sentences:
         name_list.append(item[0].replace(":",""))
-        poem_list.append(item[0:])
+        poem_list.append(item[1:])
     conunt = 0
-    with open("data/input_data.csv","a",encoding='utf-8') as f:
+    with open("data/input_data_full.csv","a",encoding='utf-8') as f:
         for i  in range(num_best):
             if i > num_best: break
             sims = instance[poem_list[i]]
@@ -57,12 +57,6 @@ def match():
                 f.write("\n")        
                 conunt += 1
     print(conunt)
-    cnt = 0
-    for k ,v in poem_match_dict.items():
-            if v == poem_com_dict[k]:
-                cnt +=1
-            else: print("error occur")
-    print(cnt)
 
 
 
