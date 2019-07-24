@@ -33,7 +33,7 @@ def match():
         name_list.append(item[0].replace(":",""))
         poem_list.append(item[1:])
     conunt = 0
-    with open("data/input_data_full.csv","a",encoding='utf-8') as f:
+    with open("data/B1_result.csv","a",encoding='utf-8') as f:
         for i  in range(num_best):
             if i > num_best: break
             sims = instance[poem_list[i]]

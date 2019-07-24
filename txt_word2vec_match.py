@@ -4,12 +4,13 @@
 from gensim.models.word2vec import LineSentence, Word2Vec
 import jieba 
 import numpy as np
+import random
 
 
 name_list = []
 poem_dict = {}
 temp = []
-temp1 = []
+# temp1 = []
 poem_match_dict = {}
 stopwords = ['，','。',' ']
 
@@ -17,22 +18,21 @@ def train():
     with open("data/wulv-all.txt","r",encoding='utf-8') as f:
         while f.readline():
             temp.append(f.readline().split(":"))
-            if len(temp) > 100:
-                break
+            # if len(temp) >= 60178:
+            #     break
     for item in temp:
-        name_list.append(temp[temp.index(item)][0])
-        poem_dict[temp[temp.index(item)][0]] = temp[temp.index(item)][1]
+        name_list.append(item[0].replace(" ",""))
+        poem_dict[name_list[temp.index(item)]] = item[1]
 
     with open("data/cut_word.txt","a",encoding='utf-8') as f:
         for i in range(len(poem_dict)):
-            words = jieba.cut_for_search(poem_dict[name_list[i]])
-            f.write(name_list[i]+":")
+            words = jieba.lcut(poem_dict[name_list[i]])
+            # f.write(name_list[i]+":")
             for word in words:
                 if word not in stopwords:
                     f.write(word+' ')
-
     sentences = LineSentence('data/cut_word.txt')
-    model = Word2Vec(sentences,min_count=3,size = 50,workers = 6)
+    model = Word2Vec(sentences,min_count=3,size = 50,workers = 100)
     model.save('data/m2v.mod')
 
 def match():
@@ -44,29 +44,34 @@ def match():
     with open("data/wulv-all.txt","r",encoding='utf-8') as f:
         while f.readline():
             temp.append(f.readline().split(":"))
-            if len(temp) > 100:
-                break
-    for item in temp:
-        name_list.append(temp[temp.index(item)][0])
-        poem_dict[temp[temp.index(item)][0]] = temp[temp.index(item)][1]
+            # if len(temp) >= 60178:
+            #     break
+    for i in range(100):
+        rand_number = []
+        while random.randint(1,10000) not in rand_number:
+            rand_number.append(random.randint(1,10000))
+            name_list.append(temp[random.randint(1,10000)][0].replace(' ',''))
+            poem_dict[name_list[i]] = temp[random.randint(1,10000)][1]
     
     max_similarity = 0
     min_similarity = 100
     for i in range(len(poem_dict)):
         word = poem_dict[name_list[i]]
         # print(word)
-        txt_cut = jieba.cut_for_search(word)
+        txt_cut = jieba.lcut(word)
         txt_cut = [item for item in txt_cut if item in model_w2v.wv.vocab]
         for key,value in poem_dict.items():
-            value_cut = list(jieba.cut_for_search(value))
+            value_cut = list(jieba.lcut(value))
             value_cut = [item for item in value_cut if item in model_w2v.wv.vocab]
             poem_match_dict[(name_list[i],key)] = (model_w2v.n_similarity(txt_cut,value_cut))
             if key == name_list[i]:
                 poem_match_dict[(name_list[i],key)] = 0
             if max_similarity<poem_match_dict[(name_list[i],key)]:max_similarity = poem_match_dict[(name_list[i],key)]
-            if min_similarity>poem_match_dict[(name_list[i],key)]:min_similarity = poem_match_dict[(name_list[i],key)]
+            if poem_match_dict[(name_list[i],key)] != 0:
+                if min_similarity>poem_match_dict[(name_list[i],key)]:min_similarity = poem_match_dict[(name_list[i],key)]
     
     for key_n, value in poem_match_dict.items():
+        print(poem_match_dict[key_n])
         poem_match_dict[key_n] = (value)/(max_similarity+min_similarity)
         tn = poem_match_dict[key_n]
         with open("data/input_data.csv","a",encoding='utf-8') as f:
@@ -78,7 +83,7 @@ def match():
                 f.write(str(ite).replace('  ','')+" ")
             f.write('\n')   
 
-    print(poem_match_dict)
+    # print(poem_match_dict)
 
 def main():
     flag = input("\nTrain or Match: ")
@@ -91,6 +96,7 @@ def main():
 
 if __name__ == "__main__":
     # match()
-    simfilename = 'data/input_data.csv'
-    X = np.genfromtxt(simfilename, delimiter='\t', encoding='utf8', dtype=None)
-    print(X)
+    main()
+    # simfilename = 'data/input_data.csv'
+    # X = np.genfromtxt(simfilename, delimiter='\t', encoding='utf8', dtype=None)
+    # print(X)
