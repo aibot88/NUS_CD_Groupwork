@@ -3,7 +3,6 @@ import csv
 import numpy as np
 import random
 
-
 temp = []
 name_list = []
 filter_list = []
