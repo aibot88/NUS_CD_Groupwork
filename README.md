@@ -15,7 +15,7 @@
 * `wmd.py`文件使用gensim封装的WordMoveDistance函数来计算短文本之间的相似度是一种比基于word2vec但是比word2vec更高效的短文本相似度算法`instance(text)`会得到一个相似度降序排列的列表
 * `data`文件夹下放置了所需要用的微博爬虫的各种数据(有抑郁症倾向和五抑郁症倾向各一半的数据)约1500条post简单解释一下data各种文件的解释, `.txt`文件都是中间临时变量,`.csv`是将运用于CD算法的数据.
 * `louvain_new.py`文件用於進行Threshold的值來進行數據的篩選, 和louvain算法的使用, 最終將生成的數據使用前端代碼進行繪圖.
-* ``文件是前端繪圖軟件, 最終的網站部署在 DPwebiste![url]<http://45.77.25.61:8080/SWS3001_TEAM5/>
+* ``文件是前端繪圖軟件, 最終的網站部署在<http://45.77.25.61:8080/SWS3001_TEAM5/>
 ![image](https://github.com/Talbot1/NUS_CD_Groupwork/raw/master/image/QR.png)
 
 ---
