@@ -1,0 +1,6 @@
+gensim
+jieba
+numpy
+community
+networkx
+matplotlib
