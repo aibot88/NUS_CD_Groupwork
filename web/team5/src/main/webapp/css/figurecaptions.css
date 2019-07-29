@@ -1,0 +1,63 @@
+figure, .figurefx{
+position: relative;
+overflow: hidden;
+display: inline-block;
+z-index: 2000; /* set this to highest z-index value on your page */
+margin: 0;
+padding: 0;
+}
+
+.figurefx img{
+position: relative;
+display: block;
+left: 0;
+top: 0;
+z-index: 98;
+}
+
+.figurefx div.veils{
+content: '';
+width: 100%;
+height: 100%;
+display: block;
+background: black;
+position: absolute;
+opacity: 0.3;
+visibility: hidden;
+top: 0;
+left:0;
+z-index: 99;
+}
+
+
+.figurefx figcaption{
+position: absolute;
+left: 0;
+top: 50%; /* vertically center caption */
+transform: translateY(-50%); /* vertically center caption */
+width: 100%;
+height: auto;
+background: #000;
+color: #fff;
+padding: 5px 10px;
+overflow: auto;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+opacity: 0;
+z-index: 100;
+}
+
+.figurefx figcaption a{
+text-decoration: none;
+}
+
+a#stickyhoverfixios{
+position: fixed;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+z-index: 1999;  /* set this to 2nd highest z-index value on your page */
+display: none;
+}

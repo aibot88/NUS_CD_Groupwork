@@ -1,0 +1,61 @@
+/*wyj:全局属性*/
+*{margin:0px;padding:0;}
+
+body{
+    /*color: #000;*/
+    font-size: 15px;
+}
+.sidebar {
+
+    font-size: 17px;
+    z-index: 999;
+    position: fixed;
+    width: 140px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    background:#16a951;
+    /*wyj：渐变*/
+    background:-webkit-linear-gradient(top,#16a951,#057748);
+    background:-moz-linear-gradient(top,#16a951,#057748);
+    background:linear-gradient(top,#16a951,#057748);
+    list-style:none;
+    border-right:solid 2px gray;
+    color:white;
+}
+
+#nav li {
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    cursor: pointer;
+    background:#ffffff;
+    background:-webkit-linear-gradient(top,#16a951,#057748);
+    background:-moz-linear-gradient(top,#16a951,#057748);
+    background:linear-gradient(top,#16a951,#057748);
+}
+.co {
+    height: 45px;
+    width: 100%;
+}
+.words {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 25px;
+}
+
+#nav li a {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    lineheight: 40px;
+
+}
+#nav li:hover {
+    color: black;
+    background: #e9bb1d;
+    background: -webkit-linear-gradient(top, #e9bb1d, #eacd76);
+    background: -moz-linear-gradient(top, #e9bb1d, #eacd76);
+    background: linear-gradient(top, #e9bb1d, #eacd76);
+}

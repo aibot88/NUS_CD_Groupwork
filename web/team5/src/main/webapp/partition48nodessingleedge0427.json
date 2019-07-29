@@ -1,0 +1,964 @@
+{
+  "type": "force",
+  "categories": [
+    {
+      "name": "0",
+      "keyword": {},
+      "base": "0"
+    },
+    {
+      "name": "1",
+      "keyword": {},
+      "base": "1"
+    },
+    {
+      "name": "2",
+      "keyword": {},
+      "base": "2"
+    },
+    {
+      "name": "3",
+      "keyword": {},
+      "base": "3"
+    },
+    {
+      "name": "4",
+      "keyword": {},
+      "base": "4"
+    },
+    {
+      "name": "5",
+      "keyword": {},
+      "base": "5"
+    },
+    {
+      "name": "6",
+      "keyword": {},
+      "base": "6"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "小盆友32125",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "惜年48183",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "走饭",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "单身哮天犬",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "三块耶",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "想取个名字叫可乐",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "做个孩子好嘛",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "地球逃犯",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "ViolaXuHao",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "二哈的淑女梦",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "诗歌又又又诈尸了",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "艺毅小波",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "洲洲瑜",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "到不了的都叫做远方___",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "-yao啊",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "愤怒的欧豆豆",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "世界那么美，怎么舍得…",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "来自于遥远的星星",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "阳光灿烂的长乐未央",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "边静呀_",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "恶魔无情",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "CarolineMiki",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "今天也要愛老何",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "ta软绵绵",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "请叫我__Marys",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "我喜欢我喜欢de人喜欢我",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "约翰尼德普颖",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "-未来可欺-",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "旅行的孤独风",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "July-牙",
+      "value": 1,
+      "category": 1
+    },
+    {
+      "name": "一个身体只能有一个灵魂",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "sexohun94",
+      "value": 1,
+      "category": 3
+    },
+    {
+      "name": "世界末日女朋友ii",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "珏小周",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "罗罗薇安",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "小骄傲的专属FD",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "要每天开心的炸鸡柳",
+      "value": 1,
+      "category": 2
+    },
+    {
+      "name": "初见子木",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "sienna赛娜",
+      "value": 1,
+      "category": 0
+    },
+    {
+      "name": "厌世枫花",
+      "value": 1,
+      "category": 1
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1
+    },
+    {
+      "source": 0,
+      "target": 2
+    },
+    {
+      "source": 0,
+      "target": 3
+    },
+    {
+      "source": 0,
+      "target": 4
+    },
+    {
+      "source": 0,
+      "target": 5
+    },
+    {
+      "source": 0,
+      "target": 6
+    },
+    {
+      "source": 0,
+      "target": 7
+    },
+    {
+      "source": 0,
+      "target": 8
+    },
+    {
+      "source": 0,
+      "target": 9
+    },
+    {
+      "source": 0,
+      "target": 10
+    },
+    {
+      "source": 0,
+      "target": 11
+    },
+    {
+      "source": 0,
+      "target": 12
+    },
+    {
+      "source": 0,
+      "target": 13
+    },
+    {
+      "source": 0,
+      "target": 14
+    },
+    {
+      "source": 0,
+      "target": 15
+    },
+    {
+      "source": 1,
+      "target": 2
+    },
+    {
+      "source": 1,
+      "target": 23
+    },
+    {
+      "source": 1,
+      "target": 6
+    },
+    {
+      "source": 1,
+      "target": 24
+    },
+    {
+      "source": 1,
+      "target": 11
+    },
+    {
+      "source": 1,
+      "target": 20
+    },
+    {
+      "source": 1,
+      "target": 14
+    },
+    {
+      "source": 1,
+      "target": 25
+    },
+    {
+      "source": 1,
+      "target": 21
+    },
+    {
+      "source": 1,
+      "target": 26
+    },
+    {
+      "source": 2,
+      "target": 18
+    },
+    {
+      "source": 2,
+      "target": 23
+    },
+    {
+      "source": 2,
+      "target": 5
+    },
+    {
+      "source": 2,
+      "target": 6
+    },
+    {
+      "source": 2,
+      "target": 7
+    },
+    {
+      "source": 2,
+      "target": 8
+    },
+    {
+      "source": 2,
+      "target": 27
+    },
+    {
+      "source": 2,
+      "target": 12
+    },
+    {
+      "source": 2,
+      "target": 13
+    },
+    {
+      "source": 2,
+      "target": 28
+    },
+    {
+      "source": 2,
+      "target": 14
+    },
+    {
+      "source": 2,
+      "target": 21
+    },
+    {
+      "source": 2,
+      "target": 26
+    },
+    {
+      "source": 3,
+      "target": 5
+    },
+    {
+      "source": 3,
+      "target": 8
+    },
+    {
+      "source": 3,
+      "target": 33
+    },
+    {
+      "source": 3,
+      "target": 26
+    },
+    {
+      "source": 4,
+      "target": 6
+    },
+    {
+      "source": 4,
+      "target": 7
+    },
+    {
+      "source": 4,
+      "target": 10
+    },
+    {
+      "source": 4,
+      "target": 17
+    },
+    {
+      "source": 4,
+      "target": 34
+    },
+    {
+      "source": 5,
+      "target": 8
+    },
+    {
+      "source": 5,
+      "target": 13
+    },
+    {
+      "source": 5,
+      "target": 14
+    },
+    {
+      "source": 5,
+      "target": 17
+    },
+    {
+      "source": 6,
+      "target": 23
+    },
+    {
+      "source": 6,
+      "target": 32
+    },
+    {
+      "source": 6,
+      "target": 36
+    },
+    {
+      "source": 6,
+      "target": 10
+    },
+    {
+      "source": 6,
+      "target": 24
+    },
+    {
+      "source": 6,
+      "target": 11
+    },
+    {
+      "source": 6,
+      "target": 12
+    },
+    {
+      "source": 6,
+      "target": 13
+    },
+    {
+      "source": 6,
+      "target": 20
+    },
+    {
+      "source": 6,
+      "target": 14
+    },
+    {
+      "source": 6,
+      "target": 33
+    },
+    {
+      "source": 6,
+      "target": 15
+    },
+    {
+      "source": 6,
+      "target": 30
+    },
+    {
+      "source": 6,
+      "target": 26
+    },
+    {
+      "source": 6,
+      "target": 22
+    },
+    {
+      "source": 7,
+      "target": 23
+    },
+    {
+      "source": 7,
+      "target": 32
+    },
+    {
+      "source": 7,
+      "target": 8
+    },
+    {
+      "source": 7,
+      "target": 27
+    },
+    {
+      "source": 7,
+      "target": 12
+    },
+    {
+      "source": 7,
+      "target": 13
+    },
+    {
+      "source": 7,
+      "target": 20
+    },
+    {
+      "source": 7,
+      "target": 14
+    },
+    {
+      "source": 7,
+      "target": 15
+    },
+    {
+      "source": 7,
+      "target": 30
+    },
+    {
+      "source": 7,
+      "target": 37
+    },
+    {
+      "source": 7,
+      "target": 21
+    },
+    {
+      "source": 7,
+      "target": 26
+    },
+    {
+      "source": 7,
+      "target": 17
+    },
+    {
+      "source": 8,
+      "target": 32
+    },
+    {
+      "source": 8,
+      "target": 27
+    },
+    {
+      "source": 8,
+      "target": 38
+    },
+    {
+      "source": 8,
+      "target": 9
+    },
+    {
+      "source": 8,
+      "target": 13
+    },
+    {
+      "source": 8,
+      "target": 14
+    },
+    {
+      "source": 8,
+      "target": 15
+    },
+    {
+      "source": 8,
+      "target": 37
+    },
+    {
+      "source": 8,
+      "target": 26
+    },
+    {
+      "source": 8,
+      "target": 17
+    },
+    {
+      "source": 8,
+      "target": 22
+    },
+    {
+      "source": 9,
+      "target": 11
+    },
+    {
+      "source": 9,
+      "target": 12
+    },
+    {
+      "source": 9,
+      "target": 15
+    },
+    {
+      "source": 9,
+      "target": 22
+    },
+    {
+      "source": 10,
+      "target": 11
+    },
+    {
+      "source": 10,
+      "target": 13
+    },
+    {
+      "source": 10,
+      "target": 14
+    },
+    {
+      "source": 10,
+      "target": 15
+    },
+    {
+      "source": 10,
+      "target": 26
+    },
+    {
+      "source": 11,
+      "target": 32
+    },
+    {
+      "source": 11,
+      "target": 36
+    },
+    {
+      "source": 11,
+      "target": 24
+    },
+    {
+      "source": 11,
+      "target": 13
+    },
+    {
+      "source": 11,
+      "target": 14
+    },
+    {
+      "source": 11,
+      "target": 33
+    },
+    {
+      "source": 11,
+      "target": 15
+    },
+    {
+      "source": 11,
+      "target": 26
+    },
+    {
+      "source": 11,
+      "target": 34
+    },
+    {
+      "source": 12,
+      "target": 13
+    },
+    {
+      "source": 12,
+      "target": 14
+    },
+    {
+      "source": 12,
+      "target": 15
+    },
+    {
+      "source": 12,
+      "target": 37
+    },
+    {
+      "source": 13,
+      "target": 32
+    },
+    {
+      "source": 13,
+      "target": 29
+    },
+    {
+      "source": 13,
+      "target": 24
+    },
+    {
+      "source": 13,
+      "target": 15
+    },
+    {
+      "source": 13,
+      "target": 30
+    },
+    {
+      "source": 13,
+      "target": 26
+    },
+    {
+      "source": 13,
+      "target": 17
+    },
+    {
+      "source": 14,
+      "target": 23
+    },
+    {
+      "source": 14,
+      "target": 32
+    },
+    {
+      "source": 14,
+      "target": 27
+    },
+    {
+      "source": 14,
+      "target": 24
+    },
+    {
+      "source": 14,
+      "target": 20
+    },
+    {
+      "source": 14,
+      "target": 25
+    },
+    {
+      "source": 14,
+      "target": 26
+    },
+    {
+      "source": 14,
+      "target": 17
+    },
+    {
+      "source": 15,
+      "target": 18
+    },
+    {
+      "source": 15,
+      "target": 23
+    },
+    {
+      "source": 15,
+      "target": 31
+    },
+    {
+      "source": 15,
+      "target": 19
+    },
+    {
+      "source": 15,
+      "target": 33
+    },
+    {
+      "source": 15,
+      "target": 37
+    },
+    {
+      "source": 15,
+      "target": 26
+    },
+    {
+      "source": 15,
+      "target": 17
+    },
+    {
+      "source": 15,
+      "target": 22
+    },
+    {
+      "source": 16,
+      "target": 17
+    },
+    {
+      "source": 17,
+      "target": 31
+    },
+    {
+      "source": 18,
+      "target": 19
+    },
+    {
+      "source": 18,
+      "target": 20
+    },
+    {
+      "source": 18,
+      "target": 21
+    },
+    {
+      "source": 18,
+      "target": 22
+    },
+    {
+      "source": 19,
+      "target": 24
+    },
+    {
+      "source": 19,
+      "target": 21
+    },
+    {
+      "source": 20,
+      "target": 32
+    },
+    {
+      "source": 20,
+      "target": 27
+    },
+    {
+      "source": 20,
+      "target": 24
+    },
+    {
+      "source": 20,
+      "target": 21
+    },
+    {
+      "source": 20,
+      "target": 26
+    },
+    {
+      "source": 21,
+      "target": 23
+    },
+    {
+      "source": 21,
+      "target": 32
+    },
+    {
+      "source": 21,
+      "target": 29
+    },
+    {
+      "source": 21,
+      "target": 24
+    },
+    {
+      "source": 21,
+      "target": 26
+    },
+    {
+      "source": 22,
+      "target": 26
+    },
+    {
+      "source": 23,
+      "target": 29
+    },
+    {
+      "source": 23,
+      "target": 27
+    },
+    {
+      "source": 23,
+      "target": 24
+    },
+    {
+      "source": 23,
+      "target": 30
+    },
+    {
+      "source": 23,
+      "target": 26
+    },
+    {
+      "source": 24,
+      "target": 32
+    },
+    {
+      "source": 24,
+      "target": 33
+    },
+    {
+      "source": 24,
+      "target": 26
+    },
+    {
+      "source": 24,
+      "target": 34
+    },
+    {
+      "source": 25,
+      "target": 37
+    },
+    {
+      "source": 25,
+      "target": 26
+    },
+    {
+      "source": 26,
+      "target": 32
+    },
+    {
+      "source": 26,
+      "target": 29
+    },
+    {
+      "source": 26,
+      "target": 36
+    },
+    {
+      "source": 26,
+      "target": 27
+    },
+    {
+      "source": 26,
+      "target": 39
+    },
+    {
+      "source": 26,
+      "target": 37
+    },
+    {
+      "source": 27,
+      "target": 37
+    },
+    {
+      "source": 30,
+      "target": 37
+    },
+    {
+      "source": 32,
+      "target": 33
+    },
+    {
+      "source": 32,
+      "target": 34
+    },
+    {
+      "source": 33,
+      "target": 36
+    },
+    {
+      "source": 33,
+      "target": 34
+    },
+    {
+      "source": 34,
+      "target": 35
+    }
+  ]
+}

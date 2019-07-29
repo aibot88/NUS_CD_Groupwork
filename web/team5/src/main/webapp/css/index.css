@@ -1,0 +1,35 @@
+/*index.jsp*/
+
+.background{
+    background-image:url('cssimg/background.jpeg'); /*from https://www.duitang.com/blog/?id=517196496*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*图片固定的，非滚动的*/
+    background-size:cover; /*把背景图片放大到适合元素容器的尺寸,图片比例不变,但是要注意,超出容器的部分可能会裁掉*/
+}
+
+#login{
+    width:500px;height:300px;
+    margin:0 auto;margin-top:10%;
+    border:solid #EEEEEE 5px;
+    padding:14px;
+    box-shadow:gray 4px 4px 4px;border-radius:5px;
+    background:rgba(255,255,255,0.1); /*红绿蓝+透明度*/
+}
+#login th{font-size:28px;color:ghostwhite;}
+#login td{font-size:15px;color:white;width:200px;}
+
+#login input{width:200px;height:30px;}
+#login input:focus{color:darkblue;}
+#login button{
+    width:160px;height:40px;
+    margin:4px;
+    cursor: pointer;
+    background:#337AB7;
+    color:white;
+    border-radius:3px;
+    box-shadow:0 2px 1px 1px #28608F;
+    font-size:18px;
+}
+
+#login button:hover{box-shadow:gray 0 0 5px inset;cursor:pointer;font-size:20px;}
